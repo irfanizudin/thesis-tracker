@@ -15,17 +15,13 @@ struct Progress: Codable{
     var done: Int
 }
 
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var table: UITableView!
-
     
+    var data: [Progress] = []
 
-    let data = [
-        Progress(title: "Book Progress", symbol: "books.vertical.fill", notStarted: 9, inProgress: 5, done: 10),
-        Progress(title: "Implementation Progress", symbol: "hammer.fill", notStarted: 6, inProgress: 9, done: 5)
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .secondarySystemBackground
@@ -37,13 +33,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let defaults = UserDefaults.standard
         getData()
 
+        let bookNotStarted = allTask.filter({return $0.category == "book" && $0.status == "notStarted"}).count
+        let bookInProgress = allTask.filter({return $0.category == "book" && $0.status == "inProgress"}).count
+        let bookDone = allTask.filter({return $0.category == "book" && $0.status == "done"}).count
+        
+        let implementNotStarted = allTask.filter({return $0.category == "implementation" && $0.status == "notStarted"}).count
+        let implementInProgress = allTask.filter({return $0.category == "implementation" && $0.status == "inProgress"}).count
+        let implementDone = allTask.filter({return $0.category == "implementation" && $0.status == "done"}).count
+
+        
         let encoder = JSONEncoder()
         if let encodedUser = try? encoder.encode(newTask) {
             defaults.set(encodedUser, forKey: "task")
         }
         
-
+        let items = [
+            Progress(title: "Book Progress", symbol: "books.vertical.fill", notStarted: bookNotStarted, inProgress: bookInProgress, done: bookDone),
+            Progress(title: "Implementation Progress", symbol: "hammer.fill", notStarted: implementNotStarted, inProgress: implementInProgress, done: implementDone)
+        ]
+        data = items
+        
     }
+    
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width-20, height: 60))

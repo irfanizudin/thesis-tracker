@@ -39,7 +39,7 @@ func getData (){
         let decoder = JSONDecoder()
         if let savedUser = try? decoder.decode([Task].self, from: savedUserData) {
             allTask = savedUser
-            print(allTask)
+//            print(allTask)
         }
     }
 }
