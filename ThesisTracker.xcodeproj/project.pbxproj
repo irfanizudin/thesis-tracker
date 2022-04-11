@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E085B2027FED8F600041FA6 /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E085B1E27FED8F600041FA6 /* ProgressCell.swift */; };
+		2E085B2127FED8F600041FA6 /* ProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E085B1F27FED8F600041FA6 /* ProgressCell.xib */; };
+		2E085B2427FF388500041FA6 /* CompletionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E085B2227FF388500041FA6 /* CompletionCell.swift */; };
+		2E085B2527FF388500041FA6 /* CompletionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E085B2327FF388500041FA6 /* CompletionCell.xib */; };
+		2E085B2727FF435900041FA6 /* MyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E085B2627FF435900041FA6 /* MyProgressViewController.swift */; };
+		2E17700A28031E3300FEBDD1 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17700928031E3300FEBDD1 /* AddTaskViewController.swift */; };
 		2E8313EB27FD31220038774A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8313EA27FD31220038774A /* AppDelegate.swift */; };
 		2E8313ED27FD31220038774A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8313EC27FD31220038774A /* SceneDelegate.swift */; };
 		2E8313EF27FD31220038774A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8313EE27FD31220038774A /* ViewController.swift */; };
 		2E8313F227FD31220038774A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8313F027FD31220038774A /* Main.storyboard */; };
 		2E8313F427FD31230038774A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8313F327FD31230038774A /* Assets.xcassets */; };
 		2E8313F727FD31230038774A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8313F527FD31230038774A /* LaunchScreen.storyboard */; };
+		2ED1A9C327FF9FD8003DB8B5 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1A9C227FF9FD8003DB8B5 /* TaskViewController.swift */; };
+		2ED1A9C627FFB823003DB8B5 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1A9C427FFB823003DB8B5 /* BookCell.swift */; };
+		2ED1A9C727FFB823003DB8B5 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED1A9C527FFB823003DB8B5 /* BookCell.xib */; };
+		2EEB4AD52803A13500EA87F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB4AD42803A13500EA87F4 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E085B1E27FED8F600041FA6 /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
+		2E085B1F27FED8F600041FA6 /* ProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressCell.xib; sourceTree = "<group>"; };
+		2E085B2227FF388500041FA6 /* CompletionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionCell.swift; sourceTree = "<group>"; };
+		2E085B2327FF388500041FA6 /* CompletionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletionCell.xib; sourceTree = "<group>"; };
+		2E085B2627FF435900041FA6 /* MyProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressViewController.swift; sourceTree = "<group>"; };
+		2E17700928031E3300FEBDD1 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		2E8313E727FD31220038774A /* ThesisTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThesisTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8313EA27FD31220038774A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E8313EC27FD31220038774A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,10 @@
 		2E8313F327FD31230038774A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8313F627FD31230038774A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E8313F827FD31230038774A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED1A9C227FF9FD8003DB8B5 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		2ED1A9C427FFB823003DB8B5 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		2ED1A9C527FFB823003DB8B5 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		2EEB4AD42803A13500EA87F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,16 @@
 				2E8313F327FD31230038774A /* Assets.xcassets */,
 				2E8313F527FD31230038774A /* LaunchScreen.storyboard */,
 				2E8313F827FD31230038774A /* Info.plist */,
+				2E085B1E27FED8F600041FA6 /* ProgressCell.swift */,
+				2E085B1F27FED8F600041FA6 /* ProgressCell.xib */,
+				2E085B2227FF388500041FA6 /* CompletionCell.swift */,
+				2E085B2327FF388500041FA6 /* CompletionCell.xib */,
+				2E085B2627FF435900041FA6 /* MyProgressViewController.swift */,
+				2ED1A9C227FF9FD8003DB8B5 /* TaskViewController.swift */,
+				2ED1A9C427FFB823003DB8B5 /* BookCell.swift */,
+				2ED1A9C527FFB823003DB8B5 /* BookCell.xib */,
+				2E17700928031E3300FEBDD1 /* AddTaskViewController.swift */,
+				2EEB4AD42803A13500EA87F4 /* Model.swift */,
 			);
 			path = ThesisTracker;
 			sourceTree = "<group>";
@@ -127,6 +157,9 @@
 			files = (
 				2E8313F727FD31230038774A /* LaunchScreen.storyboard in Resources */,
 				2E8313F427FD31230038774A /* Assets.xcassets in Resources */,
+				2ED1A9C727FFB823003DB8B5 /* BookCell.xib in Resources */,
+				2E085B2127FED8F600041FA6 /* ProgressCell.xib in Resources */,
+				2E085B2527FF388500041FA6 /* CompletionCell.xib in Resources */,
 				2E8313F227FD31220038774A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8313EF27FD31220038774A /* ViewController.swift in Sources */,
+				2ED1A9C327FF9FD8003DB8B5 /* TaskViewController.swift in Sources */,
+				2E085B2727FF435900041FA6 /* MyProgressViewController.swift in Sources */,
 				2E8313EB27FD31220038774A /* AppDelegate.swift in Sources */,
+				2ED1A9C627FFB823003DB8B5 /* BookCell.swift in Sources */,
+				2EEB4AD52803A13500EA87F4 /* Model.swift in Sources */,
+				2E085B2427FF388500041FA6 /* CompletionCell.swift in Sources */,
+				2E085B2027FED8F600041FA6 /* ProgressCell.swift in Sources */,
+				2E17700A28031E3300FEBDD1 /* AddTaskViewController.swift in Sources */,
 				2E8313ED27FD31220038774A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +333,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +345,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +362,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
